@@ -1,0 +1,16 @@
+insertRow();
+insertCell();
+
+row.insertCell(3).innerHTML = "<button>Edit</button>";
+
+
+editRow = (tableRow) =>{
+   var row = tableRow.parentElement.parentElement;
+   document.getElementById("name").value = row.cells[0].innerHTML;
+   document.getElementById("job").value = row.cells[1].innerHTML;
+   document.getElementById("ex").value = row.cells[2].innerHTML;
+}
+
+
+    row = parentElement.parentElement;
+

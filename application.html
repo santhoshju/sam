@@ -6,18 +6,42 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <fieldset>
+    <form action="" id="form">
         <label for="">Name</label>
         <input type="text" name="" id="name">
-        <label for="">age</label>
-        <input type="number" name="" id="age">
-        <label for="">email</label>
-        <input type="email" name="" id="email">
-        <label for="">city</label>
-        <input type="text" name="" id="city">
-        <button type="submit">Add</button>
 
+        <label for=""> Job </label>
+        <input type="text" name="" id="job">
+
+        <label for="">Experience</label>
+        <input type="text" name="" id="ex">
+
+        <input type="button" value="submit" id="btn" onclick="formsubmit()">
+
+        <input type="reset" value="reset">
     </form>
-    <script src="application.html"></script>
+    </fieldset>
+
+    <div id="msg">
+
+    </div>
+
+    <table border="2" id="table">
+        <tr>
+            <td class=".col">Name</td>
+            <td class=".col">Job</td>
+            <td class=".col">Expreence</td>
+            <td class=".col">Action</td>
+        </tr>
+    </table>
+
+    <fieldset>
+        <legend>
+            <head>data from local stoage</head>
+        </legend>
+    </fieldset>
+
+    <script src="application.js"></script>
 </body>
 </html>
